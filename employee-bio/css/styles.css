@@ -1,0 +1,36 @@
+a{
+	color: hsla(200, 60%, 45%, 1);
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.bio {
+	width: 350px;
+	font-family: 'Lekton', sans-serif;
+	float:left;
+}
+.bio header{
+	color: red;
+}
+.bio header img{
+	max-width: 100%;
+	border-radius:20px; 
+	border-width:5px;
+	border-style: solid;
+	border-color: black;
+}
+.bio header h1,
+.bio header h2{
+	margin: 0
+}
+.bio header h1{	 
+	color: hsla(111,32%,33%,1);
+}
+.bio header h2{
+	font-weight: 400itliac;
+}
+.bio footer {
+	background-color: hsla(0, 0%, 0%, .1);
+	padding: 10px;
+}
