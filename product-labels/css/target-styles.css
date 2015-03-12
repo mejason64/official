@@ -1,0 +1,43 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body{
+		background-color: #2c1608;
+		font-family: 'helvetica neue', arial, sans-serif;
+		height: 100%;
+		padding-top: 50px;
+		margin: 0;
+	}
+html{
+	height: 100%;
+	background-size:0;
+
+
+}
+.clearfix:after
+.clearfix:before{
+	content: "";
+	display: block;
+	clear: both;
+}
+.product-label {
+	width: 617px;
+	font-size: 100%;
+	padding: 10px;
+	background-color: #e25822;
+	border-width: 1px;
+	border-style: solid;
+	border-color: hsla(111,32%,20%,1);
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+}
+.product-label img{
+	float: left;
+	margin-left: 0;
+	margin-right: 0;
+	padding: 20px;
+	width: 150px;
+	padding-bottom: 50px;
+	border-radius: 5px;
+}
