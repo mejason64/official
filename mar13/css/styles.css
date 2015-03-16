@@ -1,0 +1,47 @@
+body{
+	background-color: gray;
+	margin: 0;
+}
+section{
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	margin: 25px;
+	position: relative;
+}
+
+
+div{
+	width: 100px;
+	height: 100px;
+	background-color: hsla(300,40%,60%,1);
+	text-align: center;
+	line-height: 100px;
+	color: white;
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	z-index: 1;*/
+}
+
+div:first-child{
+	width: 100px;
+	height: 100px;
+	background-color: hsla(300,60%,80%,1);
+	/*top: 95px;
+	left: 15px;
+	z-index: 2;*/
+	color: red;
+	top:200px;
+	left: 200px;
+}
+
+div:last-child {
+	background-color: hsla(300,20%,40%,1);
+	color: chartreuse;
+	/*left: 50px;
+	top:-125px; 
+	z-index: 3;*/
+	top: 0px;
+	left: 200px;
+}
