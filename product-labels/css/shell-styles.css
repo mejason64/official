@@ -3,7 +3,7 @@
 }
 .clearfix:before,
 .clearfix:after{
-	content: ",";
+	content: "";
 	display:block;
 	clear:both;
 }
@@ -38,7 +38,17 @@ h1{
 p{
 	width: 66%;
 	float: left;
+	text-align: center;
+	margin-top: 100px;
+
 }
 div{
 	background-color: orange;
+}
+
+#image1{
+	background-color: white;
+}
+.image{
+	background-color: green;
 }
