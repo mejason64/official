@@ -1,0 +1,97 @@
+*, *:before, *:after{
+	box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+
+
+body{
+	background-color: blue;
+	width: 100%;
+
+}
+
+#aquaimage{
+	width: 30%;
+	float: left;
+	margin-left: 2.5%;
+	margin-right: 1.25%
+}
+
+#aquaimage img{
+	display: block;
+	margin: 0 auto;
+}
+#aquaimage p {
+	text-align: center;
+
+}
+
+#middlesection{
+	width: 30%;
+	margin: auto;
+	/*float: right;*/
+	float: left;
+	margin-left: 1.25%;
+	margin-right: 1.25%;
+	text-align: center;
+}
+
+#rightsection{
+	width: 30%;
+	float: right;
+	margin-left: 1.25%;
+	margin-right: 2.5%;
+
+	
+
+}
+
+#rightsection img{
+	width: 81px;
+	display: block;
+	float: left;
+}
+
+#moreinfo{
+	font-size: 10px;
+	text-align: center;
+}
+#contactinfo{
+	text-align: center;
+	/*border: 1px solid black;
+	width: 275px;
+	height: 125px;
+	padding: 10px;
+	margin: 0 auto;
+	border-radius: 10px;*/
+}
+
+#nutritionfacts{
+	border: 1px solid black;
+	text-align: center;
+	height: inherit;
+	padding: 5px;
+	margin: 0 auto;
+	
+}
+#barcode{
+	position: absolute;
+	right: 9px;
+	bottom: 9px;
+}
+
+#waterlogo{
+	position: absolute;
+	top: 9px;
+}
+
+
+

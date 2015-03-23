@@ -1,0 +1,16 @@
+/*$var: green;*/
+$padding: 20;
+
+
+
+body{
+	background-color: white;
+	/*color: $var;*/
+}
+
+#friends {
+	li {
+		background-color: blue;
+		padding: $padding+px;
+	}
+}

@@ -1,0 +1,12 @@
+/*$var: green;*/
+body {
+  background-color: white
+  /*color: $var;*/
+}
+
+#friends li {
+  background-color: blue;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
