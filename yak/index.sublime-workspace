@@ -1,0 +1,481 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"border-width"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"h",
+				"height"
+			],
+			[
+				"fo",
+				"font-weight"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"fl",
+				"fl-l	float: left;"
+			],
+			[
+				"cou",
+				"cursor"
+			],
+			[
+				"colo",
+				"color"
+			],
+			[
+				"cur",
+				"cur-ha	cursor: hand;"
+			],
+			[
+				"b",
+				"both"
+			],
+			[
+				"td",
+				"td-u	text-decoration: underline;"
+			],
+			[
+				"f",
+				"fw	font-weight"
+			],
+			[
+				"p",
+				"padding-left"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"a",
+				"alt	Attr"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"t",
+				"text-align"
+			],
+			[
+				"s",
+				"strong	Tag"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"T",
+				"text-transform"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"d",
+				"double"
+			],
+			[
+				"l",
+				"list-style"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"C",
+				"color"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"hs",
+				"hsla()"
+			],
+			[
+				"fig",
+				"figcaption"
+			],
+			[
+				"fi",
+				"figure"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"border-w",
+				"border-width"
+			],
+			[
+				"n",
+				"nav	Tag"
+			],
+			[
+				"he",
+				"header	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test.html",
+			"settings":
+			{
+				"buffer_size": 1992,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"install pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 385.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Geekwise Academy/Desktop/official/yak/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/_reset.scss",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/test.scss",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/test.html",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/styles.scss",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/styles.css (2).map",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/styles (2).css",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/_reset.css",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/_reset.css.map",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/stylesOLD.css",
+		"/C/Users/Geekwise Academy/Desktop/official/yak/css/styles.css.map",
+		"/C/Users/Geekwise Academy/Desktop/official/mar20/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/mar20/css/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/aquafina/aquafina.html",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/css/aquafina-styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/aquafina.html",
+		"/C/Users/Geekwise Academy/Desktop/official/mar17class/css/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/mar17class/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/shell.html",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/css/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/mar17class",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/css/mar17class",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/css/shell-styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/index2.html",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/css/target-styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/target.html",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/mar4test/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/mar13/css",
+		"/C/Users/Geekwise Academy/Desktop/official/product-labels/.html",
+		"/C/Users/Geekwise Academy/Desktop/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/mar13/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/New folder/css/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/New folder/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/hhhhh/css/styles.css.hhh",
+		"/C/Users/Geekwise Academy/Desktop/official/login-page/css/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/product-labels",
+		"/C/Users/Geekwise Academy/Desktop/official/music-playlist/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/music-playlist/css/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/employee-bio/css/styles.css",
+		"/C/Users/Geekwise Academy/Desktop/official/employee-bio/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/music-playlist",
+		"/C/Users/Geekwise Academy/Desktop/official/login-page/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/microsoft/index.html",
+		"/C/Users/Geekwise Academy/Desktop/official/mar5/index.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"click",
+			"class=\"clearfix\"",
+			"\n}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1992,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								162
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 652.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

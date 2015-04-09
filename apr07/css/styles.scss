@@ -1,0 +1,424 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+%clearfix {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+body, h1, h2, h3, ul {
+	margin: 0;
+}
+h1, h2, h3 {
+	font-family: impact;
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.75em;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+				background-color: hsla(0, 0%, 95%, 1);
+				border: none;
+				padding: 5px 10px;
+				font-size: 1em;
+				float: right;
+				border-radius: 10px;
+				&:hover{
+					background-color: green;
+				}
+
+			}
+
+body {
+	font-family: 'helvetica neue', helvetica, arial, sans-serif;
+	font-size: 18;
+	color: hsla(0, 0%, 5%, 1);
+}
+
+
+header {
+	background-color: grey;
+	nav {
+			&::before, &::after {
+				@extend %clearfix;
+			}			
+			background-color: white;
+
+			> a {
+			display: block;
+			width: 75px;
+			height: 75px;
+			background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AM2MFR/th.jpg);
+			background-size: 100%;
+			text-indent: -9999px;
+			float: left;
+
+		}
+		ul {
+			float: right;
+		}
+		li {
+			display: inline-block;
+			line-height: 75px;
+			a {
+			padding: 0 20px;
+			}
+
+		}
+		
+	}
+	#hero {
+			background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AMFA57/outrun-t-rex-orig.jpg);
+			background-position: top center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			padding: 80px 20px 40px;
+			color: white;
+			p {
+				width: 50%;
+			}		
+		
+		button {
+			float: none;
+		}
+		&:hover{
+					background-color: green;
+				}
+
+	}
+}
+
+section {
+	&::before, &::after {
+		@extend %clearfix;
+	}
+	padding: 20px;
+	h2 , ul, span {
+		width: 50%;
+	}
+	h2 {
+		margin-bottom: 40px;
+	}
+}
+
+section:first-of-type {
+		background-color: hsla(197, 90%, 41%, 1);
+		background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04B2GBGH/dino-large_large_large.png);
+		background-size: 70%;
+		background-position: 150% 20px;
+		background-repeat: no-repeat;
+
+}
+section:nth-of-type(2) {
+		background-color: hsla(228, 18%, 52%, 1);
+		background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04B2MMQP/velicoraptor-dinosaur_1.png);
+		background-size: 70%;
+		background-position: -50% 20px;
+		background-repeat: no-repeat;
+		h2, span{
+			float: right;
+			text-align: right;
+			clear: right;	
+	}
+}
+section:last-of-type {
+
+		background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AMNU01/7412196590_622d8c6956.jpg);
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		div {
+			width: calc(25% - 20px);
+			padding: 10px;
+			margin: 10px;
+			float: left;
+			border-width: 1px;
+			border-style: solid;
+			border-color: hsla(0, 0%, 95%, .4);
+			background-color: hsla(0, 0%, 95%, .4);
+			h3 {
+
+			}
+			
+		}
+
+}
+
+footer {
+	padding: 20px;
+	background-color: hsla(0, 0%, 5%, 1);
+	color: white;
+	&::before, &::after {
+			@extend %clearfix;
+		}
+	ul, address {
+		float: left;
+		width: 33.3333%;
+		list-style: none;
+		padding: 0;
+		line-height: 1.5;
+
+	}
+}
+ @media screen and (max-width: 768px){
+ 	section:first-of-type{
+ 		background-color: hsla(350, 90%, 41%, 1);
+ 	}
+ 	section:nth-of-type(2) {
+ 		button {
+	 		width: 100%;
+	 	
+	 		&:hover{
+					background-color: green;
+				}
+ 		}
+ 	background-color: hsla(010, 18%, 52%, 1);
+ }
+ 	section:last-of-type{
+ 		div{
+ 			float: left;
+ 			width: calc(50% - 20px);
+ 			background-color: white;
+ 		}
+ 	}
+ }	
+ 
+
+
+
+ @media screen and (max-width: 450px) {
+ 	header nav {
+ 		> a {
+			width: 125px;
+			height: 125px;
+			margin: 0 auto;
+			float: none;
+
+		}
+		ul {
+			width: 100%;
+			padding: 0;
+
+		}
+		li {
+			display: block;
+			text-align: center;
+ 		}
+ 	}
+ 	    h1 {
+ 			width: 100%;
+ 			text-align: center;
+ 			margin: 0 auto;
+ 			float: none;
+ 		}
+
+ 		button {
+	 		width: 100%;
+	 		float: none;
+	 		&:hover{
+					background-color: orange;
+				}
+
+	 	}
+
+ 		h2, {
+ 			width: 50%;
+ 			float: none;
+ 		}
+
+section:first-of-type {
+	ul,	li {
+	 		width: 100%;
+			float: none;
+			display: block;
+	}		
+}
+section:nth-of-type(2) {
+		background-color: hsla(100, 18%, 52%, 1);
+
+	h2 {
+		width: 50%;
+	}
+
+	span {
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+		display: block;
+		}
+}
+
+section:last-of-type {
+	
+	div {
+		float: none;
+		margin: 0 auto 10px;
+		width: calc(100% - 10px);
+		background-color: red;
+	}
+	button {
+	 		width: 100%;
+	 		float: none;
+	 		&:hover{
+					background-color: yellow;
+				}
+
+	 	}
+
+  }  	
+}
+
+
+
+
+ 		
+ 	
+	
+
+
+
+
+
+
+
+
+
+
+
+// *,*::before, *::after{
+// 	box-sizing: border-box;
+// }
+
+
+
+// .clearfix::before,
+// .clearfix::after {
+// 	content: "";
+// 	display: block;
+// 	clear: both;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// body {
+
+// 	background-color: red;
+// 	transition:background-color 250ms ease-in-out;
+
+// }
+
+// h1,h2 {
+// 	text-align: center;
+// }
+
+// #dogs {
+// 	width: 100%;
+// 	text-align: center;
+// 	button{
+// 		display:block;
+// 		margin: 0 auto;
+// 		background-color: black;
+// 		color: white;
+// 		font-size: 20px;
+// 		text-align: center;
+// 		&:hover{
+// 			transform: scale(2);
+// 			border-radius: 20%;
+// 		}
+// 	}
+
+// }
+
+//  @media screen and (max-width: 450px) {
+//  	body {
+//  		width: 100%;
+//  		background-color: orange;
+//  	}
+//  	h1, h2 {
+//  		background-color: red;
+//  	}	
+	
+// }
+//  @media screen and (min-width: 450px) {
+// 	body {
+// 		width: 100%;
+// 		background-color: green;
+// 	}
+// 	h1, h2 {
+// 		background-color: yellow;
+// 	}
+// }
+// @media screen and (min-width: 768px) {
+// 	body {
+// 		width: 100%;
+// 		background-color: yellow;
+// 	}
+// 	h1, h2 {background-color: green;}
+// }
+// @media screen and (min-width: 992px) {
+// 	body {
+// 		width: 100%;
+// 		background-color: blue;
+// 	}
+// 	h1, h2 {
+// 		background-color: red;
+// 	}
+// }
+// @media screen and (min-width: 1200px) {
+// 	body {
+// 		width: 100%;
+// 		background-color: red;
+// 	}
+// 	h1, h2 {
+// 		 background-color: blue;
+// 	}
+// }
+
+
+

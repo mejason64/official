@@ -1,0 +1,251 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+header nav::before, header nav::after, section::before, section::after, footer::before, footer::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body, h1, h2, h3, ul {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: impact;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1em;
+  float: right;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: green;
+}
+
+body {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-size: 18;
+  color: #0d0d0d;
+}
+
+header {
+  background-color: grey;
+}
+header nav {
+  background-color: white;
+}
+header nav > a {
+  display: block;
+  width: 75px;
+  height: 75px;
+  background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AM2MFR/th.jpg);
+  background-size: 100%;
+  text-indent: -9999px;
+  float: left;
+}
+header nav ul {
+  float: right;
+}
+header nav li {
+  display: inline-block;
+  line-height: 75px;
+}
+header nav li a {
+  padding: 0 20px;
+}
+header #hero {
+  background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AMFA57/outrun-t-rex-orig.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 20px 40px;
+  color: white;
+}
+header #hero p {
+  width: 50%;
+}
+header #hero button {
+  float: none;
+}
+header #hero:hover {
+  background-color: green;
+}
+
+section {
+  padding: 20px;
+}
+section h2, section ul, section span {
+  width: 50%;
+}
+section h2 {
+  margin-bottom: 40px;
+}
+
+section:first-of-type {
+  background-color: #0a91c7;
+  background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04B2GBGH/dino-large_large_large.png);
+  background-size: 70%;
+  background-position: 150% 20px;
+  background-repeat: no-repeat;
+}
+
+section:nth-of-type(2) {
+  background-color: #6f779b;
+  background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04B2MMQP/velicoraptor-dinosaur_1.png);
+  background-size: 70%;
+  background-position: -50% 20px;
+  background-repeat: no-repeat;
+}
+section:nth-of-type(2) h2, section:nth-of-type(2) span {
+  float: right;
+  text-align: right;
+  clear: right;
+}
+
+section:last-of-type {
+  background-image: url(https://files.slack.com/files-pri/T03QAUMCG-F04AMNU01/7412196590_622d8c6956.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section:last-of-type div {
+  width: calc(25% - 20px);
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(242, 242, 242, 0.4);
+  background-color: rgba(242, 242, 242, 0.4);
+}
+
+footer {
+  padding: 20px;
+  background-color: #0d0d0d;
+  color: white;
+}
+footer ul, footer address {
+  float: left;
+  width: 33.3333%;
+  list-style: none;
+  padding: 0;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  section:first-of-type {
+    background-color: #c70a2a;
+  }
+
+  section:nth-of-type(2) {
+    background-color: #9b766f;
+  }
+  section:nth-of-type(2) button {
+    width: 100%;
+  }
+  section:nth-of-type(2) button:hover {
+    background-color: green;
+  }
+
+  section:last-of-type div {
+    float: left;
+    width: calc(50% - 20px);
+    background-color: white;
+  }
+}
+@media screen and (max-width: 450px) {
+  header nav > a {
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    float: none;
+  }
+  header nav ul {
+    width: 100%;
+    padding: 0;
+  }
+  header nav li {
+    display: block;
+    text-align: center;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    float: none;
+  }
+
+  button {
+    width: 100%;
+    float: none;
+  }
+  button:hover {
+    background-color: orange;
+  }
+
+  h2 {
+    width: 50%;
+    float: none;
+  }
+
+  section:first-of-type ul, section:first-of-type li {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+
+  section:nth-of-type(2) {
+    background-color: #7d9b6f;
+  }
+  section:nth-of-type(2) h2 {
+    width: 50%;
+  }
+  section:nth-of-type(2) span {
+    width: 100%;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  section:last-of-type div {
+    float: none;
+    margin: 0 auto 10px;
+    width: calc(100% - 10px);
+    background-color: red;
+  }
+  section:last-of-type button {
+    width: 100%;
+    float: none;
+  }
+  section:last-of-type button:hover {
+    background-color: yellow;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

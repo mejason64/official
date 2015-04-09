@@ -1,0 +1,189 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, sans-serif;
+  color: #564343;
+}
+
+header::before, header::after, section:first-of-type ul::before, section:first-of-type ul::after, section:nth-of-type(3)::before, section:nth-of-type(3)::after, section:last-of-type::before, section:last-of-type::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: lightblue;
+}
+header h1 {
+  width: 50%;
+  float: left;
+  margin: 0;
+  text-align: center;
+  font-size: 60px;
+}
+header h1 span {
+  font-size: 80px;
+}
+header address {
+  width: 50%;
+  float: left;
+  font-size: 26px;
+  line-height: 1.2;
+  border-left: 10px solid #c4d9b4;
+  padding-left: 10px;
+  margin: 14pxs auto;
+  padding-top: 10px;
+}
+
+section {
+  margin: 20px 0 40px;
+}
+section div {
+  position: relative;
+}
+section div div {
+  margin-bottom: 40px;
+}
+section h2 {
+  color: white;
+  font-weight: 300;
+  white-space: nowrap;
+  padding: 0 40px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  background-color: teal;
+  margin: 0;
+  top: 0;
+  right: 100%;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right;
+}
+section ul {
+  padding-left: 35px;
+}
+
+section:first-of-type li {
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+
+section:nth-of-type(2) > div {
+  width: 100%;
+}
+
+section:nth-of-type(3) h2 {
+  background-color: #57a297;
+}
+section:nth-of-type(3) > div {
+  width: 33%;
+  float: left;
+}
+section:nth-of-type(3) > div:last-of-type div h2 {
+  position: static;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+}
+section:nth-of-type(3) > div:last-of-type ul {
+  padding-left: 0;
+}
+
+section:last-of-type h2 {
+  background-color: #564343;
+}
+section:last-of-type > div {
+  width: 50%;
+  float: left;
+}
+section:last-of-type > div div:first-child h2 {
+  background-color: #c4d9b4;
+}
+
+/*ul, ol {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 30px;
+}*/
+	/*.rotate {
+
+			&:before,
+			&:after {
+				@extend %clearfix;
+			}
+
+			position: relative;
+			margin-bottom: 0;
+			h2{
+				margin: 0;
+				background-color: teal;
+				position: absolute;
+				top: 0;
+				right: 0;
+				transform: 90deg;
+				transform-origin: top right;
+
+
+			} 
+		}*/
+	/*header {
+			&:before,
+			&:after {
+				@extend %clearfix;
+			}
+
+			h1 {
+				width: 50%;
+				float: left;
+				margin: 0;
+				text-align: center;
+
+			}
+	        address {
+	        	width: 50%;
+	        	float:left;
+	        	border-left: 5px solid teal;
+	        	padding-left: 10px
+	        	}
+	   		}*/
+		/*section {
+					&:before,
+					&:after {
+						@extend %clearfix;
+				}
+					margin-bottom: 40px;
+				div{
+					margin-bottom: 40px;
+				}
+
+		section:first-of-type {
+					&:before,
+					&:after {
+						@extend %clearfix;
+
+				h2 {
+						
+					}
+
+				}
+
+			}*/
+
+/*# sourceMappingURL=styles.css.map */

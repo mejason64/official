@@ -1,0 +1,114 @@
+@import "reset";
+
+
+
+$base-color: hsla(157, 63%, 43%, 1);
+$light-base: lighten($base-color, 20);
+$dark-base: darken($base-color, 20);
+$white-base: lighten(grayscale($base-color), 50);
+$black-base: darken(grayscale($base-color), 30);
+$comp-base:complement($base-color);
+
+$border2: 2px solid black;
+$btckr: red;
+$btnpd: 5px 10px;
+$btnfont: 24px;
+
+$header-width: 872px;
+
+@function divwidth($width, $numboxes){
+	@return $width / $numboxes;
+}
+
+header {
+	width: $header-width;
+	margin: 0 auto;
+	background-color: orange;
+	div{
+		width: divwidth($header-width, 3);
+		float: left;
+	}
+}
+
+section {
+	width: $header-width;
+	margin: 0 auto;
+	background-color: orange;
+	div{
+		width: divwidth($header-width, 5);
+		float: left;
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*header {
+	$width: 500px;
+	$border: 5px;
+	background-color: hsla(30, 70%, 50%, 1);
+	border-width: $border;
+	border-style: solid;
+	border-color: black;
+	height: calcHeight($width, $border);
+} */
+	
+
+
+
+
+%bordering {
+	border-width:5px; 
+	border-style:groved;
+	border-color:black;
+}
+
+@mixin border-mixin($width, $style, $color)
+{
+	border-width:$width;
+	border-style:$style;
+	border-color:$color;
+}
+
+
+
+
+
+body {
+	background-color: $light-base;
+}
+
+p {
+	color: $comp-base;
+	@include border-mixin(3px, solid, yellow);
+}
+
+h1, h2, h3 {
+	color: $btckr;
+	 text-decoration: underline;
+		  &:hover{ 
+				background-color: darken($btckr, 20);
+				cursor: pointer;
+				color: white;
+			}
+
+			&:active{
+				background-color: darken(complement($btckr), 20);
+}
+}
+
+ul, li {
+	color: $black-base;
+	@include border-mixin(4px, double, black);
+}
+
+

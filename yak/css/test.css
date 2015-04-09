@@ -1,0 +1,72 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  width: 872px;
+  margin: 0 auto;
+  background-color: orange;
+}
+header div {
+  width: 290.66667px;
+  float: left;
+}
+
+section {
+  width: 872px;
+  margin: 0 auto;
+  background-color: orange;
+}
+section div {
+  width: 174.4px;
+  float: left;
+}
+
+/*header {
+	$width: 500px;
+	$border: 5px;
+	background-color: hsla(30, 70%, 50%, 1);
+	border-width: $border;
+	border-style: solid;
+	border-color: black;
+	height: calcHeight($width, $border);
+} */
+body {
+  background-color: #65dcaf;
+}
+
+p {
+  color: #b3295e;
+  border-width: 3px;
+  border-style: solid;
+  border-color: yellow;
+}
+
+h1, h2, h3 {
+  color: red;
+  text-decoration: underline;
+}
+h1:hover, h2:hover, h3:hover {
+  background-color: #990000;
+  cursor: pointer;
+  color: white;
+}
+h1:active, h2:active, h3:active {
+  background-color: #009999;
+}
+
+ul, li {
+  color: #212121;
+  border-width: 4px;
+  border-style: double;
+  border-color: black;
+}
+
+/*# sourceMappingURL=test.css.map */

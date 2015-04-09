@@ -1,12 +1,149 @@
-/*$var: green;*/
-body {
-  background-color: white
-  /*color: $var;*/
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#friends li::before,
+#friends li::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+#friends button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+#friends h3:hover, #friends button:hover {
+  background-color: #990000;
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+body {
+  background-color: grey;
+}
+
+#friends {
+  width: 252px
+  	/*button{
+  		font-size: $btnfont;
+  		padding: $btnpd;
+  		&:hover{ 
+  			background-color: darken($btckr, 20);
+  			color: white;
+  			cursor: pointer;
+  			text-decoration: underline;
+  		}
+  		
+  		&:active{
+  			background-color: darken(complement($btckr), 20);
+  		}	
+  	
+  }
+  
+  	h2{
+  		  margin-top: 40px;
+  		  text-decoration: underline;
+  		  &:hover{ 
+  				background-color: darken($btckr, 20);
+  				cursor: pointer;
+  				color: white;
+  			}
+  
+  			&:active{
+  				background-color: darken(complement($btckr), 20);
+  			}
+  	  }
+  
+  h3{
+  	border: $border2;
+  	&:hover{ 
+  			background-color: darken($btckr, 20);
+  			color: white;
+  			cursor: pointer;
+  			text-decoration: underline;
+  
+  			
+  		}
+  		
+  		&:active{
+  			background-color: darken(complement($btckr), 20);
+  		}*/
+}
+#friends ul {
+  padding: 0;
+  margin: 0;
+}
 #friends li {
-  background-color: blue;
-  padding: 20px;
+  border-width: 2px;
+  border-style: double;
+  border-color: #ededed;
+  color: #ededed;
+  margin: 2px;
+  background-image: linear-gradient(red, #65dcaf)
+  /*&.active {
+  	background-image: linear-gradient($base-color, $black-base);
+  }*/
+}
+#friends img {
+  width: 50px;
+  float: left;
+  border-radius: 50%;
+  margin-left: 2.5px;
+  margin-right: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+#friends h2, #friends h3 {
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+#friends h2 {
+  font-weight: 800;
+}
+#friends h2:hover {
+  background-color: #990000;
+  cursor: pointer;
+  color: white;
+}
+#friends h2:active {
+  background-color: #009999;
+}
+#friends h3 {
+  font-weight: 90;
+  font-style: italic;
+}
+#friends h3:active {
+  background-color: #009999;
+}
+#friends li div:first-of-type {
+  width: 150px;
+  float: left;
+}
+#friends li div:last-of-type {
+  float: left;
+}
+#friends button {
+  background-color: #212121;
+  color: #ededed;
+  border-radius: 4px;
+}
+#friends button:active {
+  background-color: #009999;
 }
 
 /*# sourceMappingURL=styles.css.map */

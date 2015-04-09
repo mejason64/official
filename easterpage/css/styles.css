@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: arial, helvetica, sans-serif;
+  color: #999999;
+}
+
+section {
+  float: left;
+  width: 100%;
+}
+
+h1 {
+  text-align: left;
+  padding-left: 21%;
+}
+h1 .span {
+  color: red;
+}
+
+h4 {
+  color: black;
+}
+
+/*.logo_tagline {
+	margin: 5px 0 0 3px;
+	font-size: 9px;
+	line-height: 16px;
+	color: rgba(74,74,74,0.4);
+	font-variant: small-caps;
+}*/
+
+/*# sourceMappingURL=styles.css.map */

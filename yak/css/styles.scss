@@ -1,16 +1,201 @@
-/*$var: green;*/
-$padding: 20;
+@import "reset";
+
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+
+$base-color: hsla(157, 63%, 43%, 1);
+$light-base: lighten($base-color, 20);
+$dark-base: darken($base-color, 20);
+$white-base: lighten(grayscale($base-color), 50);
+$black-base: darken(grayscale($base-color), 30);
+$comp-base:complement($base-color);
+
+%bordering{
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+@mixin border-mixin($width, $style, $color) {
+	border-width: $width;
+	border-style: $style;
+	border-color: $color;
+}
+
+@mixin gradient-mixin($color1, $color2)
+	{
+	background-image: linear-gradient($color1, $color2);
+}
 
 
 
-body{
-	background-color: white;
-	/*color: $var;*/
+
+$border2: 2px solid black;
+$btckr: red;
+$btnpd: 5px 10px;
+$btnfont: 24px;
+
+%hoverCss{
+	background-color: darken($btckr, 20);
+	color: white;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+body {
+	background-color: grey;
 }
 
 #friends {
+		width: 252px;
+	ul{
+		padding: 0;
+		margin: 0;
+		}
 	li {
-		background-color: blue;
-		padding: $padding+px;
+		@include border-mixin(2px, double, $white-base);
+		//@extend %bordering;
+		//background-image: linear-gradient(lighten($black-base, 10), $black-base);
+		color: $white-base;
+		margin: 2px;
+		@include gradient-mixin($btckr, $light-base);
+		
+		/*&.active {
+			background-image: linear-gradient($base-color, $black-base);
+		}*/
+	}	
+
+	li::before, 
+	li::after {
+		@extend %clearfix;
 	}
+
+
+	img {
+		width: 50px;
+		float: left;
+		border-radius: 50%;
+		margin-left: 2.5px;
+		margin-right: 5px;
+		//@extend %bordering;
+		@include border-mixin(2px, solid, black);
+
+		}
+
+	h2, h3{
+		margin: 0;
+		font-size: 16px;
+		font-family: sans-serif;
+	}
+
+	h2{
+		font-weight: 800;
+		&:hover{ 
+				background-color: darken($btckr, 20);
+				cursor: pointer;
+				color: white;
+			}
+
+			&:active{
+				background-color: darken(complement($btckr), 20);
+			}
+	}
+	
+	h3{
+		font-weight: 90;
+		font-style: italic;
+		&:hover{ 
+			@extend %hoverCss;
+		}
+		
+		&:active{
+			background-color: darken(complement($btckr), 20);
+		}
+
+	}
+
+	li div:first-of-type {
+		width: 150px;
+		float: left;
+	}
+
+	li div:last-of-type {
+		
+		float: left;
+	}
+
+button {
+	@extend %bordering;
+	background-color: $black-base;
+	color: $white-base;
+	border-radius: 4px;
+	&:hover{ 
+		@extend %hoverCss;
+		}
+	&:active{
+			background-color: darken(complement($btckr), 20);
+		}
 }
+
+
+
+
+
+
+	/*button{
+		font-size: $btnfont;
+		padding: $btnpd;
+		&:hover{ 
+			background-color: darken($btckr, 20);
+			color: white;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+		
+		&:active{
+			background-color: darken(complement($btckr), 20);
+		}	
+	
+}
+
+	h2{
+		  margin-top: 40px;
+		  text-decoration: underline;
+		  &:hover{ 
+				background-color: darken($btckr, 20);
+				cursor: pointer;
+				color: white;
+			}
+
+			&:active{
+				background-color: darken(complement($btckr), 20);
+			}
+	  }
+
+h3{
+	border: $border2;
+	&:hover{ 
+			background-color: darken($btckr, 20);
+			color: white;
+			cursor: pointer;
+			text-decoration: underline;
+
+			
+		}
+		
+		&:active{
+			background-color: darken(complement($btckr), 20);
+		}*/
+
+
+
+
+
+
+
+
+
+
+
+}
+
