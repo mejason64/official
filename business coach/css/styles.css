@@ -1,0 +1,224 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+section::before, section::after, section ul::before, section ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html {
+  background-color: lightgray;
+}
+
+body {
+  width: 960px;
+  box-shadow: 0 0 8px 1px #4a4a4f;
+  margin: 0 auto;
+  background-color: white;
+  font-family: sans-serif;
+  color: #b0b0b5;
+}
+
+a {
+  color: #5da2cb;
+  text-decoration: none;
+}
+a:hover {
+  color: #4a4a4f;
+}
+
+h1, h2, h3, h4, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h3 {
+  color: #5da2cb;
+  font-size: 1.9em;
+  font-weight: 400;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: blue;
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: blue;
+  border: none;
+  border-radius: none;
+}
+
+.dropdown-menu > li > a {
+  color: white;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  color: white;
+  background-color: #4a4a4f;
+}
+
+.navbar-default .navbar-brand {
+  color: #4a4a4f;
+  font-size: 2em;
+}
+.navbar-default .navbar-brand span {
+  padding: 9px 9px 0;
+  color: white;
+  text-shadow: 0 0 5px #2f6e92;
+  background-color: #5da2cb;
+}
+
+/*nav {
+    &::before, &::after {
+        @extend %clearfix;
+    }
+    padding: 9px 0;
+    h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+        float: left;
+        a {color: $black;}
+        span {
+            padding: 9px 9px 0;
+            color: $white;
+            @include textshadow($darkblue);
+            background-color: $blue;
+        }
+    }
+    ul {
+        float: right;
+        li {
+            display: inline-block;
+            line-height: 40px;
+            transition: all 250ms ease-in-out;
+            a {
+                color: $black;
+                font-weight: 600;
+                display: block;
+                padding: 0 10px;
+                transition: all 250ms ease-in-out;
+            }
+            &.active, &:hover {
+                background-color: $blue;
+                @include textshadow($darkblue);
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}*/
+#hero {
+  color: white;
+  text-shadow: 0 0 5px #5da2cb;
+  background-image: url("../images/p1_bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 80px 20px 60px;
+}
+#hero h2 {
+  font-size: 3em;
+}
+#hero p {
+  width: 45%;
+  font-size: 1.25em;
+  line-height: 1.25;
+}
+
+section {
+  padding: 20px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid #b0b0b5;
+}
+section h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+section ul li {
+  width: calc(33.3333% - 20px);
+  margin: 0 10px;
+  float: left;
+  font-size: 14px;
+}
+
+section:first-of-type h4 {
+  color: #5da2cb;
+  line-height: 47px;
+  background-color: #f2f2f3;
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 69px;
+}
+section:first-of-type h4::before {
+  color: white;
+  font-family: FontAwesome;
+  font-weight: 100;
+  font-size: 32px;
+  text-align: center;
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  padding-right: 12px;
+  background-image: url("../img/title_bg1.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  text-shadow: 0 0 5px #2f6e92;
+}
+section:first-of-type li:first-of-type h4::before {
+  content: "\f128";
+}
+section:first-of-type li:nth-of-type(2) h4::before {
+  content: "\f074";
+}
+section:first-of-type li:last-of-type h4::before {
+  content: "\f10d";
+}
+
+section#contact li {
+  width: 100%;
+}
+section#contact > div:first-child {
+  width: 33.3333%;
+  float: left;
+}
+section#contact > div:last-child {
+  width: 66.6666%;
+  float: right;
+}
+section#contact label {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 20px;
+  line-height: 2;
+}
+section#contact label, section#contact textarea {
+  display: block;
+  width: 100%;
+  padding-left: 20px;
+  color: lightgray;
+  border-color: lightgray;
+}
+section#contact input {
+  border: none;
+}
+section#contact input[type="submit"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.25em;
+  color: #5da2cb;
+  background-color: lightgray;
+}
+
+/*# sourceMappingURL=styles.css.map */

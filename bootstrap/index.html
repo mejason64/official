@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap</title>
+
+
+	 Latest compiled and minified CSS 
+<link rel="stylesheet" href="https://maxcdn.	bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	 Optional theme 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<style type="text/css">
+
+			#c1{
+				background-color: red;
+			}
+			#c2 {
+				background-color: orange;
+			}
+
+			#c2 div div:first-child {
+				background-color: blue;
+			}
+
+			#c2 div div:last-child {
+				background-color: green;
+			}
+			
+			#c3 {
+				background-color: yellow;
+			}
+		
+			#c3 div div:first-child {
+				background-color: rgb(232, 202, 55);
+			}	
+
+			#c3 div div:nth-child(2) {
+				background-color: rgb(119, 010, 5);
+			}	
+
+			#c3 div div:last-child {
+				background-color: rgb(160, 147, 8);
+			}	
+
+			#c4  div div div:first-child {
+				background-color: rgb(237, 7, 7);
+			}
+			#c4 div div div:nth-child(2) {
+				background-color: rgb(232, 210, 56);
+			}
+			#c4 div div div:nth-child(3) {
+				background-color: rgb(237, 40, 50);
+			}
+			#c4 div div div:last-child {
+				background-color: rgb(237, 27, 8);
+			}
+		
+
+
+
+		</style>
+
+</head>
+<body>
+<a href="bst2.html">bst2</a>
+<nav class="navbar navbar-default">
+
+</nav>
+
+
+			nested columns in columns
+
+To nest your content with the default grid, add a new .row and set of .col-sm-* columns within an existing .col-sm-* column. Nested rows should include a set of columns that add up to 12 or fewer (it is not required that you use all 12 available columns).-->
+
+
+		  			<!--level 1-->
+
+				<div class="row">
+		  			<div class="col-sm-12 col-md-6 col-lg-4" id="c1">
+			    			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto soluta ex nostrum earum, minima quasi sequi ipsum, itaque et illo hic suscipit accusantium quo atque deserunt sunt modi iste a.
+			    	</div>
+
+			    	<div class="col-sm-12 col-md-6 col-lg-4" id="c2">
+			    		<div class="row">
+			    		level 
+			     		 	<div class="col-sm-12 col-md-12 col-lg-6">
+			      		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum tempore suscipit, quas corporis numquam cumque eos in distinctio, alias aliquam natus facilis consequatur reiciendis autem mollitia blanditiis repellendus illo adipisci.
+			     			</div>
+
+			      			<div class="col-sm-12 col-md-12 col-lg-6">
+			        		Level 2
+			        		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem explicabo, totam, dolorum a, quo tempore facilis reiciendis nam architecto tempora assumenda iste cum minima rerum voluptatibus aliquam enim? Pariatur, officia.
+			      			</div>
+			      		</div>
+			      	</div>
+
+			      	<div class="col-sm-12 col-md-6 col-lg-4 c3" id="c3">
+			      		<div class="row">
+			      			<div class="col-sm-12 col-md-6 col-lg-4">
+			      		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum tempore suscipit, quas corporis numquam cumque eos in distinctio, alias aliquam natus facilis consequatur reiciendis autem mollitia blanditiis repellendus illo adipisci.
+			     			</div>
+			     			<div class="col-sm-12 col-md-6 col-lg-4">
+			      		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum tempore suscipit, quas corporis numquam cumque eos in distinctio, alias aliquam natus facilis consequatur reiciendis autem mollitia blanditiis repellendus illo adipisci.
+			     			</div>
+			     			<div class="col-sm-12 col-md-6 col-lg-4">
+			      		  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum tempore suscipit, quas corporis numquam cumque eos in distinctio, alias aliquam natus facilis consequatur reiciendis autem mollitia blanditiis repellendus illo adipisci.
+			     			</div>
+		     			</div>
+			     	</div>
+				</div>--> 
+
+
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-6" id="c2">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis deleniti velit doloribus illo at itaque cum debitis maiores soluta quam assumenda vel voluptatum corrupti, ratione cumque optio, beatae quos, quae?
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-6" id="c1">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, quidem aliquam eum aut ut itaque ad dolorem cum ratione repellendus nemo molestiae vel sit debitis, veniam optio labore amet laboriosam.
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-sm-6 col-md-6 col-lg-4" id="c3">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem maxime sint beatae itaque quis ratione, neque laborum, corporis nesciunt tempora ipsa a nulla repellendus. Iusto corporis hic porro esse fugiat.
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-4" id="c1">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem maxime sint beatae itaque quis ratione, neque laborum, corporis nesciunt tempora ipsa a nulla repellendus. Iusto corporis hic porro esse fugiat.
+							</div>
+							<div class="col-sm-6 col-md-6 col-lg-4" id="c3">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem maxime sint beatae itaque quis ratione, neque laborum, corporis nesciunt tempora ipsa a nulla repellendus. Iusto corporis hic porro esse fugiat.
+							</div>
+						</div>
+					</div>
+				</div>
+							
+
+
+
+
+
+
+			<div class="row">
+
+			<div class="col-sm-12 col-md-6 col-lg-4" id="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias vitae neque ipsa veritatis amet, esse temporibus quasi voluptatem possimus tempore, obcaecati, assumenda ex maxime cupiditate voluptate excepturi alias, iste quibusdam.</div>
+
+				<div class="col-sm-12 col-md-6 col-lg-4" id="c2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae eaque, aut quis totam, voluptatibus velit? Quod sapiente id expedita animi, quo maiores eius commodi eligendi atque rem. A, fugiat, repellat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, sit. Voluptatem quod, quis autem debitis vel quasi laborum, ipsam maiores nostrum sequi velit est itaque maxime dolores eaque, possimus quos?</div>
+				<div class="col-sm-12 col-md-6 col-lg-4" id="c3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam mollitia excepturi praesentium voluptates voluptatem quia quod, accusantium maxime sapiente veniam magnam velit id dignissimos neque consequuntur doloremque esse perferendis fugit!</div>
+				<div class="col-sm-12 col-md-6 col-lg-12" id="c1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum dolorem nemo ut modi recusandae at, cum, minima animi adipisci sed distinctio, placeat facere, nihil debitis! Quidem voluptatem fugiat, quas laboriosam.</div>
+			</div>
+
+
+
+
+
+			<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+			
+		
+	</body>
+</html>

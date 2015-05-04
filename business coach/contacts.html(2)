@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Business Coach</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1><a href="index.html"><span>B</span>usiness coach</a></h1>
+            <ul>
+                <li class=""><a href="#">Home</a></li>
+                <li class="active"><a href="#">About</a></li>
+                <li class=""><a href="#">Services</a></li>
+                <li class=""><a href="#">Solutions</a></li>
+                <li class=""><a href="contact.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact">
+        <div>
+            <h3>Contact information</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nam doloremque vel, velit sapiente ad incidunt dolores ea expedita voluptatibus sit laborum autem quos. Labore doloribus reprehenderit expedita voluptatibus debitis!</p>
+            <address>
+                <ul>
+                    <li>4578 Marmora Road, Glasgow D04 89GR</li>
+                    <li>800-2345-678</li>
+                    <li>mail@demolink.org</li>
+                    <li>Everyday 9:00-17:00</li>
+                </ul>
+            </address>
+        </div>
+        <div>
+            <h3>Contact form</h3>
+            <form>
+                <label for="name">Your Name
+                    <input type="text">
+                </label>
+
+                <label for="email">Your Email
+                    <input type="email">
+                </label>
+
+                <label for="tel">Your Phone Number
+                    <input type="tel">
+                </label>
+
+                <textarea name="commets" id="" cols="30" rows="10">Your Message</textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+
+</body>
+</html>
+

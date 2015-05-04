@@ -1,0 +1,74 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: blue;
+}
+
+#utilnav {
+  background-color: #171717;
+  color: #e8e8e8;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 80%;
+  font-family: sans-serif;
+}
+#utilnav li {
+  padding: 20px;
+}
+#utilnav li:nth-of-type(3) {
+  margin-right: auto;
+}
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*section:first-of-type {
+	//display: flex;
+	flex: 1;
+	background-color: green;
+	align-items: flex-start;
+	//justify-content: space-around;
+		h1:nth-of-type(even) {
+			align-self: stretch;
+			
+		}
+		
+		h1:nth-of-type(6) {
+			align-self: center;
+			
+		}
+}*/
+/*section:last-of-type {
+	flex: 1;
+	background-color: orange;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+}*/
+
+/*# sourceMappingURL=styles.css.map */

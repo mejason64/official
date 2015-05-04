@@ -1,0 +1,267 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
+
+$blue: hsla(202, 51%, 58%, 1);
+$darkblue: darken($blue, 20);
+$white: hsla(0, 100%, 100%, 1);
+$black: hsla(240, 3%, 30%, 1);
+
+%clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@mixin textshadow($color){
+    text-shadow: 0 0 5px $color;
+}
+html {
+    background-color: lightgray;
+}
+body {
+    width: 960px;
+    box-shadow: 0 0 8px 1px $black;
+    margin: 0 auto;
+    background-color: $white;
+    font-family: sans-serif;
+    color: lighten($black, 40);
+}
+
+a {
+    color: $blue;
+    text-decoration: none;
+    &:hover {
+        color: $black;
+    }
+}
+
+h1, h2, h3, h4, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h3 {
+    color: $blue;
+    font-size: 1.9em;
+    font-weight: 400;
+}
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav >li > a:focus,
+.navbar-default .navbar-nav > .open >a,
+.navbar-default .navbar-nav > .open > a:hover
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: blue;
+  color: white;
+}
+.dropdown-menu {
+ background-color: blue;
+ border: none;
+ border-radius: none;
+
+}
+.dropdown-menu > li > a {
+  color: $white;
+  &:hover, &:focus {
+    color: $white;
+    background-color: $black;
+  }
+}
+
+.navbar-default .navbar-brand {
+  color: $black;
+  font-size: 2em;
+        span {
+            padding: 9px 9px 0;
+            color: $white;
+            @include textshadow($darkblue);
+            background-color: $blue;
+        }
+
+}
+
+
+/*nav {
+    &::before, &::after {
+        @extend %clearfix;
+    }
+    padding: 9px 0;
+    h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+        float: left;
+        a {color: $black;}
+        span {
+            padding: 9px 9px 0;
+            color: $white;
+            @include textshadow($darkblue);
+            background-color: $blue;
+        }
+    }
+    ul {
+        float: right;
+        li {
+            display: inline-block;
+            line-height: 40px;
+            transition: all 250ms ease-in-out;
+            a {
+                color: $black;
+                font-weight: 600;
+                display: block;
+                padding: 0 10px;
+                transition: all 250ms ease-in-out;
+            }
+            &.active, &:hover {
+                background-color: $blue;
+                @include textshadow($darkblue);
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}*/
+#hero {
+    color: $white;
+    @include textshadow($blue);
+    background-image: url("../images/p1_bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding: 80px 20px 60px;
+    h2 {
+        font-size: 3em;
+
+    }
+    p {
+        width: 45%;
+        font-size: 1.25em;
+        line-height: 1.25;
+    }
+}
+section {
+    &::before, &::after {
+        @extend %clearfix;
+    }
+    padding: 20px 0;
+    margin: 0 20px;
+    border-bottom: 1px solid lighten($black, 40);
+    h3 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    ul {
+        &::before, &::after {
+            @extend %clearfix;
+        }
+        li {
+            width: calc(33.3333% - 20px);
+            margin: 0 10px;
+            float: left;
+            font-size: 14px;
+        }
+    }
+}
+section:first-of-type {
+    h4 {
+        color: $blue;
+        line-height: 47px;
+        background-color: lighten($black, 65);
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 69px;
+        &::before {
+            color: $white;
+            font-family: FontAwesome;
+            font-weight: 100;
+            font-size: 32px;
+            text-align: center;
+            display: inline-block;
+            width: 47px;
+            height: 47px;
+            padding-right: 12px;
+            background-image: url("../img/title_bg1.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 0;
+            @include textshadow($darkblue);
+        }
+    }
+    li:first-of-type h4::before {content: "\f128";}
+    li:nth-of-type(2) h4::before {content: "\f074";}
+    li:last-of-type h4::before {content: "\f10d";}
+}
+
+section#contact {
+    li {
+        width: 100%;
+    }
+    > div:first-child {
+        width: 33.3333%;
+        float: left;
+    }
+    > div:last-child {
+        width: 66.6666%;
+        float: right;
+    }
+    label {
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 20px;
+        line-height: 2;
+    }
+    label, textarea {
+        display: block;
+        width: 100%;
+        padding-left: 20px;
+        color: lightgray;
+        border-color: lightgray;
+    }
+    input {
+        border: none;
+    }
+    input[type="submit"]{
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 1.25em;
+        color: $blue;
+        background-color: lightgray;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
